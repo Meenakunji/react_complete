@@ -2,26 +2,37 @@ import './App.css';
 
 import Video from './Componants/Video';
 
+import vidoes  from './data/Data';
+
 
 function App() {
 
-const obj = {
-  title : "learn Mongo",
-  channelname: "kunj",
-  view: "3M",
-  likes : "4k",
-  verified : true,
-}
 
-const check = true;
+
+// const check = true;
 
   return(
     <>
       
+      
+
       <div className='box'>
-      <Video {...obj}/>
-      <  Video title = "Database"  value = '2002' channelname='codemohit'/>
-      <Video title = "React" value = '2002' channelname='coderdost' verified = {check}/>
+         {/* <h2>vidoes</h2> */}
+      {
+        vidoes.map((video)=>
+            <Video 
+              title={video.title}
+              channelname={video.channelname}
+              view= {video.view}
+              likes={video.likes}
+              verified = {video.verified}
+              id= {video.id}
+
+
+              
+            />
+        )
+      }
       </div>
   </>
 

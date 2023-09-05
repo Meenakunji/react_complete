@@ -1,0 +1,25 @@
+const vidoes = [{
+    id : 1,
+    title : "learn Mongo",
+    channelname: "kunj",
+    view: "3M",
+    likes : "4k",
+    verified : true,
+  },
+  {  id : 2,
+    title : "learn database",
+    channelname: "coderkunj",
+    view: "7M",
+    likes : "2k",
+    verified : false,
+  },
+  {  id : 3,
+    title : "learn Api",
+    channelname: "codedost",
+    view: "2M",
+    likes : "100",
+    verified : true,
+  },
+  ]
+
+  export default vidoes;
