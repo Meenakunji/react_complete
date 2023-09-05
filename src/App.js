@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Video from './Componants/Video';
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const obj = {
+  title : "learn Mongo",
+  channelname: "kunj",
+  view: "3M",
+  likes : "4k",
+  verified : true,
 }
+
+const check = true;
+
+  return(
+    <>
+      
+      <div className='box'>
+      <Video {...obj}/>
+      <  Video title = "Database"  value = '2002' channelname='codemohit'/>
+      <Video title = "React" value = '2002' channelname='coderdost' verified = {check}/>
+      </div>
+  </>
+
+     
+  
+   );
+}
+
+
 
 export default App;
